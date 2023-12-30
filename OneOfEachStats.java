@@ -11,7 +11,7 @@ public class OneOfEachStats {
   double random= generator.nextDouble();
   for (int i=0; i<T; i++) { 
       while(girl==0||boy==0) { 
-	       if (random<0.5){
+	       if (random<(Seed/2)){
 			  boy++;
 		   }else { 
 				 girl++;
