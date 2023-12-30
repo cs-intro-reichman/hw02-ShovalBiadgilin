@@ -8,8 +8,9 @@ public class OneOfEachStats {
   int T= Integer.parseInt(args[0]);
   int seed=Integer.parseInt(args[1]);
   Random generator = new Random(seed); 
-  double random= generator.nextDouble();
+  
   for (int i=0; i<T; i++) { 
+  double random= generator.nextDouble();
       while(girl==0||boy==0) { 
 	       if (random<0.5){
 			  boy++;
@@ -18,7 +19,7 @@ public class OneOfEachStats {
 			} 
 
 			sum=sum+1;
-			random=Math.random();
+			random=generator.nextDouble();
 		   } 
 		   total=total+sum;
 		  
@@ -45,7 +46,7 @@ public class OneOfEachStats {
 		                   }
       }else { 
 		  if (count3>count4){ 
-			     System.out.println("The most common number of children is 3."); 
+			     System.out.println("The most commom number of children is 3."); 
 			       } else { 
 			         System.out.println("The most common number of children is 4 or more.");
 			                }
