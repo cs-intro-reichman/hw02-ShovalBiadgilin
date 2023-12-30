@@ -33,21 +33,21 @@ public class OneOfEachStats {
        sum=0; girl=0; boy=0;
   }
 	   
-	  System.out.println("Average: " +(total/T)+ " children to get at least one of each gender");
+	  System.out.println("Average: " +(total/T)+ " children to get at least one of each gender.");
       System.out.println("Number of families with 2 children: " + count2);
 	  System.out.println("Number of families with 3 children: " + count3);
 	  System.out.println("Number of families with 4 or more children: " + count4);
 	  if (count2>count3){ 
 	      if (count2>count4){ 
-		        System.out.println("The most commom number of children is 2");
+		        System.out.println("The most commom number of children is 2.");
 		          }else { 
-		             System.out.println("The most commom number of children is 4 or more");
+		             System.out.println("The most commom number of children is 4 or more.");
 		                   }
       }else { 
 		  if (count3>count4){ 
-			     System.out.println("The most common number of children is 3"); 
+			     System.out.println("The most common number of children is 3."); 
 			       } else { 
-			         System.out.println("The most common number of children is 4 or more");
+			         System.out.println("The most common number of children is 4 or more.");
 			                }
 	  }
 	  
