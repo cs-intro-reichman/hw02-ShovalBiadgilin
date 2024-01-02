@@ -12,6 +12,7 @@ public class OneOfEachStats {
   for (int i=0; i<T; i++) { 
   double random= generator.nextDouble();
       while(girl==0||boy==0) { 
+	  random=generator.nextDouble();
 	       if (random<0.5){
 			  boy++;
 		   }else { 
@@ -19,7 +20,7 @@ public class OneOfEachStats {
 			} 
 
 			sum=sum+1;
-			random=generator.nextDouble();
+		
 		   } 
 		   total=total+sum;
 		  
