@@ -8,9 +8,8 @@ public class OneOfEachStats {
   int T= Integer.parseInt(args[0]);
   int seed=Integer.parseInt(args[1]);
   Random generator = new Random(seed); 
-  
+   double random = 0;
   for (int i=0; i<T; i++) { 
-  double random= generator.nextDouble();
       while(girl==0||boy==0) { 
 	  random=generator.nextDouble();
 	       if (random<0.5){
