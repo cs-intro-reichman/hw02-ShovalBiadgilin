@@ -18,6 +18,7 @@ public class Reverse {
 	
 	
 	last=str.length();
+	  // #feedback - Use of "if" is unnecessary here. ((last-1) / 2) will give the middle character in both scenarios.
 	  if(last%2==0){ 
      		 System.out.println("The middle character is " + str.charAt((last/2)-1));
 	  
